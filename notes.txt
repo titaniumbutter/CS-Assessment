@@ -1,0 +1,26 @@
+tinyArray:
+
+insert 32.5 μs
+append 75.7 μs
+
+smallArray:
+
+insert 46.2 μs
+append 92 μs
+
+mediumArray:
+
+insert 160 μs
+append 136.9 μs
+
+largeArray:
+
+insert 4.2325 ms
+append 598.5 μs
+
+extraLargeArray:
+
+insert: 425.3651ms
+append: 2.2876ms
+
+It is clear that as the bigger the array gets, the longer it takes for the doublerAppend and doublerInsert functions to finish running. According to the results from above, it is clear that the doublerAppend function scales better. This is because when testing each array, it looks to be scaling at a consistent rate in an upward trend. Whereas in the doublerInsert fucniton, the scaling hits a huge change when it hits the extraLargeArray.
